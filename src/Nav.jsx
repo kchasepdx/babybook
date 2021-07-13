@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../src/contexts/AuthContext";
 import fire from "/Users/kristenchase/baby-book/src/fire.js";
+import { Link } from "react-router-dom";
 
 function Nav(props) {
   const history = useHistory();
@@ -37,13 +38,13 @@ function Nav(props) {
       <nav id="full-navbar" className="navbar fixed-top">
         <div className={`container-fluid ${userName && "nav-with-user"}`}>
           {curPage === "/profile" ? (
-            <a className="current-nav navbar-brand" href="/profile">
-              Home
-            </a>
+            <Link to="/profile">
+              <a className="current-nav navbar-brand">Home</a>
+            </Link>
           ) : (
-            <a className="navbar-brand" href="/profile">
-              Home
-            </a>
+            <Link to="/profile">
+              <a className="navbar-brand">Home</a>{" "}
+            </Link>
           )}
           {curPage === "/community" ? (
             <a
