@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/babybook/static/css/main.9dab9eea.chunk.css",
-    "main.js": "/babybook/static/js/main.f45ccfa7.chunk.js",
-    "main.js.map": "/babybook/static/js/main.f45ccfa7.chunk.js.map",
+    "main.js": "/babybook/static/js/main.b3f94b07.chunk.js",
+    "main.js.map": "/babybook/static/js/main.b3f94b07.chunk.js.map",
     "runtime-main.js": "/babybook/static/js/runtime-main.4b9ad20b.js",
     "runtime-main.js.map": "/babybook/static/js/runtime-main.4b9ad20b.js.map",
     "static/js/2.bd17bde6.chunk.js": "/babybook/static/js/2.bd17bde6.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.4b9ad20b.js",
     "static/js/2.bd17bde6.chunk.js",
     "static/css/main.9dab9eea.chunk.css",
-    "static/js/main.f45ccfa7.chunk.js"
+    "static/js/main.b3f94b07.chunk.js"
   ]
 }

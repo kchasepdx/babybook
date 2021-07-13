@@ -47,19 +47,18 @@ function Nav(props) {
             </Link>
           )}
           {curPage === "/community" ? (
-            <a
-              className="navbar-brand current-nav"
-              href={process.env.PUBLIC_URL + "/community"}
-            >
-              Community
-            </a>
+            <Link to="/community">
+              <a className="navbar-brand current-nav">Community</a>
+            </Link>
           ) : (
-            <a
-              className="navbar-brand "
-              href={process.env.PUBLIC_URL + "/community"}
-            >
-              Community
-            </a>
+            <Link to="community">
+              <a
+                className="navbar-brand "
+                href={process.env.PUBLIC_URL + "/community"}
+              >
+                Community
+              </a>
+            </Link>
           )}
 
           <li class="nav-item dropdown">
@@ -94,12 +93,12 @@ function Nav(props) {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdown"
               >
-                <a class="drop-brand drop-main" href="/book">
-                  View Book
-                </a>
-                <a class="drop-brand drop-main" href="/questionnaire">
-                  Edit
-                </a>
+                <Link to="/book">
+                  <a class="drop-brand drop-main">View Book</a>
+                </Link>
+                <Link to="/questionnaire">
+                  <a class="drop-brand drop-main">Edit</a>
+                </Link>
               </div>
             )}
           </li>
