@@ -15,7 +15,7 @@ import FullPost from "./pages/FullPost.jsx";
 
 const Main = () => {
   return (
-    <BrowserRouter basename="/babybook">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <AuthProvider>
         <Switch>
           {" "}
