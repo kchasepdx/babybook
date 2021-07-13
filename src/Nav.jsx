@@ -56,7 +56,7 @@ function Nav(props) {
           )}
 
           <li class="nav-item dropdown">
-            {curPage === "/babybook/book" ? (
+            {curPage === "/book" ? (
               <a
                 class="nav-link dropdown-toggle current-nav"
                 id="navbarDropdown"
