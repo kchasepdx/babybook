@@ -46,11 +46,17 @@ function Nav(props) {
             </a>
           )}
           {curPage === "/community" ? (
-            <a className="navbar-brand current-nav" href="/community">
+            <a
+              className="navbar-brand current-nav"
+              href={process.env.PUBLIC_URL + "/community"}
+            >
               Community
             </a>
           ) : (
-            <a className="navbar-brand " href="/community">
+            <a
+              className="navbar-brand "
+              href={process.env.PUBLIC_URL + "/community"}
+            >
               Community
             </a>
           )}

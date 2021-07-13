@@ -71,21 +71,21 @@ function Profile() {
             alt="cartoon baby"
           />
           <div className="view-book">
-            <Link to="/babybook/book">
+            <Link to="/book">
               <button className="prof-btn" id="book-button">
                 <h2>View My Book</h2>
               </button>
             </Link>
           </div>
           <div className="update-book">
-            <Link to="/babybook/questionnaire">
+            <Link to="/questionnaire">
               <button className="prof-btn" id="update-button">
                 <h2>Update My Book</h2>
               </button>
             </Link>
           </div>
           <div className="community">
-            <Link to="/babybook/community">
+            <Link to="/community">
               <button className="prof-btn" id="comm-button">
                 <h2>Community</h2>
               </button>
