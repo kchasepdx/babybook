@@ -67,7 +67,9 @@ function Landing() {
       <img src={Cloud} alt="cloud" id="cloud" />
       <h1 className="landing-header container-fluid">Virtual Baby Book</h1>{" "}
       <button id="register-link" className="container-fluid">
-        <Link to="/register">Register Now</Link>
+        <Link to="https://kchasepdx.github.io/babybook/#/register">
+          Register Now
+        </Link>
       </button>
       <img src={Book} alt="book image" id="book-img" />
       <div id="rainbow-div"></div>
