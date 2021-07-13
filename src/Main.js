@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { AuthProvider } from "/Users/kristenchase/baby-book/src/contexts/AuthContext.js";
 import PrivateRoute from "/Users/kristenchase/baby-book/src/pages/PrivateRoute.js";
 
@@ -15,13 +15,13 @@ import FullPost from "./pages/FullPost.jsx";
 
 const Main = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <AuthProvider>
         <Switch>
           {" "}
           {/* The Switch decides which component to show based on the current URL.*/}
-          <Route path="/" component={Landing} />
-          <Route path="/register" component={Register} />
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/register" component={Register} />
           <PrivateRoute exact path="/profile" component={Profile} />
           <PrivateRoute exact path="/community" component={Community} />
           <PrivateRoute exact path="/questionnaire" component={Questionnaire} />
@@ -30,7 +30,7 @@ const Main = () => {
           <PrivateRoute path="/post/:id" component={FullPost} />
         </Switch>
       </AuthProvider>
-    </Router>
+    </BrowserRouter>
   );
 };
 
