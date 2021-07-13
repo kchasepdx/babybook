@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { AuthProvider } from "/Users/kristenchase/baby-book/src/contexts/AuthContext.js";
 import PrivateRoute from "/Users/kristenchase/baby-book/src/pages/PrivateRoute.js";
 
@@ -15,7 +15,7 @@ import FullPost from "./pages/FullPost.jsx";
 
 const Main = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <AuthProvider>
         <Switch>
           {" "}
