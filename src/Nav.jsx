@@ -19,7 +19,7 @@ function Nav(props) {
     try {
       setError("");
       await logout();
-      history.push("/");
+      history.push("/babybook");
     } catch {
       setError("failed to log out");
     }
