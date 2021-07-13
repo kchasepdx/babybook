@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AuthProvider } from "/Users/kristenchase/baby-book/src/contexts/AuthContext.js";
 import PrivateRoute from "/Users/kristenchase/baby-book/src/pages/PrivateRoute.js";
 
@@ -15,7 +15,7 @@ import FullPost from "./pages/FullPost.jsx";
 
 const Main = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
       <AuthProvider>
         <Switch>
           {" "}
@@ -30,7 +30,7 @@ const Main = () => {
           <PrivateRoute path="/post/:id" component={FullPost} />
         </Switch>
       </AuthProvider>
-    </BrowserRouter>
+    </Router>
   );
 };
 
