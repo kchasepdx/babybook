@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AuthProvider } from "/Users/kristenchase/baby-book/src/contexts/AuthContext.js";
 import PrivateRoute from "/Users/kristenchase/baby-book/src/pages/PrivateRoute.js";
 
