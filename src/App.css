@@ -1,0 +1,1131 @@
+/* font-family: "Bubbler One", sans-serif;
+font-family: "Oldenburg", cursive;
+font-family: "Quando", serif; */
+/* font-family: 'Fredericka the Great', cursive; */
+
+.App {
+  text-align: center;
+}
+
+#root {
+  padding-bottom: 60px;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Landing Page */
+
+#book-img {
+  display: none;
+}
+
+#cloud {
+  z-index: 2;
+  position: absolute;
+  width: 42%;
+  margin-top: 11.5em;
+}
+
+.landing-header {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 7em;
+  line-height: 167px;
+  line-height: 100%;
+  align-items: Center;
+  vertical-align: Center;
+  opacity: 100%;
+  width: 70%;
+  margin-top: 0.5em;
+  color: white;
+  z-index: 3;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  right: 0px;
+  left: 0px;
+}
+
+#rainbow-div {
+  height: 46vw;
+  width: 100vw;
+  opacity: 0.8;
+  background: radial-gradient(
+    ellipse at 50% 110%,
+    #f7f2e7 35%,
+    #c9cbff 40%,
+    #c1a1d3 45%,
+    #78c4d4 50%,
+    #ffba93 55%,
+    #5bc6e8 60%,
+    #ffb4b4 65%,
+    #f7f2e7 70%
+  );
+}
+
+#register-link {
+  z-index: 2;
+  position: absolute;
+  margin-top: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b3e988;
+  color: white;
+  border: none;
+  height: 60px;
+  width: 293px;
+  border-radius: 20px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+#register-link a {
+  color: white;
+  font-family: "Quando", serif;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+/* Landing : Log-In Button  */
+
+.mb-3 {
+  margin-top: 10px;
+  font-family: "Quando", serif;
+}
+
+#login-button {
+  background-color: #b3e988;
+  border-color: white;
+  border-radius: 25px;
+}
+
+#login-button:hover {
+  background-color: teal;
+}
+
+/* Landing for Phones */
+@media screen and (max-width: 768px) {
+  .landing-header {
+    color: teal;
+    width: 100%;
+    /* position: relative; */
+    /* margin-bottom: 1.5em;
+    margin-top: 100px; */
+  }
+
+  #rainbow-div {
+    display: none;
+  }
+
+  #cloud {
+    display: none;
+  }
+}
+#book-img {
+  display: none;
+}
+
+/* Landing - iPAD */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Specific to this particular image */
+
+  #book-img {
+    width: 50%;
+    display: inherit;
+    margin: 35% 25%;
+  }
+
+  #cloud {
+    display: none;
+  }
+}
+
+/* Nav Bar */
+
+.navbar .container-fluid {
+  background-color: #b3e988;
+  width: 500px;
+  border-radius: 20px;
+  font-family: "Quando", serif;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand a {
+  color: #5bc6e8;
+}
+
+.nav-with-user {
+  width: 50% !important;
+}
+
+.user-name-nav {
+  background-color: #c1a1d3;
+  border-radius: 10%;
+}
+
+.current-nav {
+  background-color: white;
+  color: #b3e988;
+  border-radius: 10px;
+}
+
+li {
+  display: inline;
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 5px;
+  text-decoration: none;
+}
+
+.navbar-phone {
+  visibility: hidden;
+  font-family: "Quando", serif;
+}
+
+#dropdown-main-menu {
+  display: grid;
+  background-color: #5bc6e8;
+  border-radius: 20%;
+}
+
+.drop-main {
+  font-family: "Quando", serif;
+}
+
+.drop-main:hover {
+  background-color: white;
+  border-radius: 40%;
+}
+
+.user-name-comment {
+  font-weight: bold;
+  font-size: 1em !important;
+}
+
+@media screen and (max-width: 376px) {
+  #full-navbar {
+    visibility: hidden;
+  }
+
+  .navbar-phone {
+    visibility: visible;
+    margin-top: 20px;
+    margin-left: 80%;
+  }
+
+  .bg-light {
+    background-color: transparent !important;
+  }
+  .menu-btn {
+    background-color: teal;
+  }
+  .drop-brand {
+    color: #5bc6e8;
+  }
+  .dropdown-menu show {
+    display: none;
+  }
+  .dropdown-menu {
+    background-color: #5bc6e8;
+    border-radius: 20%;
+    color: white;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  #full-navbar {
+    visibility: hidden;
+  }
+  .navbar-phone {
+    visibility: visible;
+    margin-top: 20px;
+    margin-left: 80%;
+  }
+  .bg-light {
+    background-color: transparent !important;
+  }
+  .menu-btn {
+    background-color: transparent;
+    color: #5bc6e8;
+    border-style: none;
+    font-size: 2.5rem;
+  }
+}
+
+/* Register Page */
+
+#reg-form-div {
+  padding: 2%;
+}
+
+.register-header {
+  margin: auto;
+  margin-top: 150px;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  background-color: #ffc996;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: "Quando", serif;
+  font-weight: 100;
+}
+
+.register-input {
+  border-radius: 25px;
+  border: none;
+  padding: 8px;
+  margin: auto;
+  margin-top: 30px;
+  height: 40px;
+  font-family: "Oldenburg", cursive;
+}
+
+.register-button {
+  width: 100px;
+  background-color: #5bc6e8;
+  border: none;
+  color: white;
+  font-size: large;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  height: 30px;
+  font-family: "Oldenburg", cursive;
+}
+
+.register-button:hover {
+  background-color: #ffc996;
+}
+
+#register-link-reg {
+  width: 300px;
+  background-color: #b6c9f0;
+  border: none;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+  height: 30px;
+  font-family: "Oldenburg", cursive;
+}
+
+#register-link-reg:hover {
+  background-color: #ffc996;
+}
+
+#register-link-reg a {
+  color: white;
+}
+
+#register-error {
+  color: red;
+  background-color: lightpink;
+  border-radius: 20px;
+  margin-left: 500px;
+}
+
+.registration-box {
+  background-color: #e0ece4;
+  border-radius: 20px;
+  font-family: "Oldenburg", cursive;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.Input-green {
+  background-color: #d5ecc2;
+}
+
+/* Registration Page Images */
+#onesie {
+  position: absolute;
+  z-index: 4;
+  width: 100px;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+#pacifier {
+  position: absolute;
+  z-index: 4;
+  width: 100px;
+  height: auto;
+  margin-top: 33%;
+  margin-left: 20%;
+}
+
+#teddy-bear {
+  position: absolute;
+  z-index: 4;
+  width: 100px;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 70%;
+}
+
+#rubber-duck {
+  position: absolute;
+  z-index: 4;
+  width: 100px;
+  height: auto;
+  margin-top: 33%;
+  margin-left: 70%;
+}
+
+@media screen and (min-width: 1330px) and (max-width: 1550px) {
+  .reg-images {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1329px) {
+  .reg-images {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1551px) {
+  .reg-images {
+    display: none;
+  }
+}
+
+/* Registration - Phone & Tablet*/
+
+@media screen and (max-width: 768px) {
+  .register-button {
+    margin-left: auto;
+  }
+
+  #register-link-reg {
+    width: 254px;
+  }
+
+  .registration-box {
+    width: 75%;
+  }
+
+  .register-header {
+    margin-top: 50px;
+    height: 50px;
+  }
+}
+/* Profile Home Page */
+
+.baby {
+  margin: 5% auto;
+  width: 70%;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  border-radius: 50%;
+}
+
+.view-book {
+  grid-column-start: 1;
+  grid-row-end: 4;
+  margin: 0 auto;
+}
+
+.update-book {
+  grid-column-start: 2;
+  grid-row-end: 4;
+  margin: 0 auto;
+}
+
+.community {
+  grid-column-start: 3;
+  grid-row-end: 4;
+  margin: 0 auto;
+}
+
+.prof-btn {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  width: 275px;
+  font-family: "Quando", serif;
+  height: 100px;
+  margin-bottom: 150px;
+}
+
+#book-button {
+  background-color: #ff8474;
+}
+#book-button:hover {
+  background-color: thistle;
+}
+
+#update-button {
+  background-color: #ffc996;
+}
+#update-button:hover {
+  background-color: thistle;
+}
+
+.profile-header {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-end: 3;
+  color: #5bc6e8;
+  font-size: 5rem;
+  font-family: "Fredericka the Great", cursive;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 480px 480px 480px;
+  grid-gap: 0px;
+  font-family: "Quando", serif;
+  grid-template-rows: 100px 300px 100px;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+
+#comm-button {
+  background-color: #77acf1;
+}
+#comm-button:hover {
+  background-color: thistle;
+}
+
+/* Profile - Phone */
+
+@media screen and (max-width: 411px) {
+  .profile-container {
+    display: contents;
+  }
+
+  .baby {
+    margin: 1% 17%;
+    width: 59%;
+  }
+
+  .profile-header {
+    font-size: 3.8rem;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .prof-btn {
+    margin: 3% 20%;
+    width: 223px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .prof-btn h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Profile - Tablets */
+
+@media screen and (min-width: 411px) and (max-width: 1332px) {
+  .Profile-container {
+    display: contents;
+  }
+
+  .baby {
+    margin: 1% 25%;
+    width: 50%;
+  }
+
+  .profile-header {
+    color: #5bc6e8;
+    text-align: center;
+    font-size: 6.5rem;
+    margin: 0% 9%;
+  }
+
+  .prof-btn {
+    display: flex;
+    width: 70%;
+    margin: 2% 15%;
+    height: 70px;
+  }
+
+  .prof-btn h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 3% auto;
+  }
+
+  .profile-container {
+    display: block;
+    font-family: "Quando", serif;
+  }
+}
+
+/* Post Page */
+
+#post-container {
+  margin: 0 auto;
+  width: 65vw;
+}
+
+#user-post {
+  background-color: #d6e5f5;
+  border-radius: 25px;
+  border-color: #e5e8eb;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 65vw;
+  margin-top: 2%;
+  height: 60%;
+  font-family: "Oldenburg", cursive;
+  font-size: 1.5rem;
+  max-width: none !important;
+}
+
+#post-label {
+  color: #5bc6e8;
+  border-radius: 20px;
+  font-family: "Quando", serif;
+  font-size: 1.5rem;
+  width: 65vw;
+  text-align: center;
+  margin-left: 7% auto;
+}
+
+#post-header {
+  color: #c4c4c4;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Oldenburg", cursive;
+  color: #b3e988;
+  margin: 5% auto;
+  width: 65vw;
+}
+
+#post-button {
+  background-color: #b3e988;
+  border: none;
+  border-radius: 25px;
+  font-family: "Quando", serif;
+  color: white;
+  height: 30px;
+  width: 14vw;
+  margin: 1% 40%;
+}
+
+#post-title {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  width: 50vw;
+  margin: 2% auto;
+}
+
+#post-title::placeholder {
+  color: white;
+  font-family: "Quando", serif;
+}
+
+/* Post --Phone */
+
+@media screen and (max-width: 411px) {
+  #post-title {
+    width: 85vw;
+    margin: 2%;
+  }
+
+  #post-header {
+    width: 100vw;
+    margin: 2% 0%;
+  }
+
+  #post-label {
+    width: 97vw;
+    margin-left: 0px;
+    color: #5bc6e8;
+  }
+
+  #user-post {
+    width: 86vw;
+    margin: 2%;
+    height: 45vh;
+  }
+
+  #post-button {
+    width: 25vw;
+    margin: 1% 15%;
+  }
+
+  #post-container {
+    width: 100vw;
+  }
+}
+
+/* Post --Tablet */
+
+@media screen and (min-width: 412px) and (max-width: 768px) {
+  #post-header {
+    font-size: 4.5em;
+  }
+
+  #post-label {
+    width: 65vw;
+    font-size: 2rem;
+    margin: 2% auto;
+  }
+
+  #post-title {
+    width: 65vw;
+    font-size: 1.5em;
+    margin: 3% auto;
+  }
+
+  #user-post {
+    width: 65vw;
+    font-size: 1.5em;
+    margin: 3% auto;
+    height: 65vh;
+  }
+
+  #post-button {
+    font-size: 1.5em;
+    height: 8vh;
+    width: 20vw;
+  }
+  #post-container {
+    width: 100vw;
+  }
+}
+
+/* Community Page */
+
+.card-text {
+  display: -webkit-box;
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+#community-header {
+  background-color: white;
+  color: #5bc6e8;
+  font-family: "Quando", serif;
+  font-size: 3em;
+  margin: 10% 25% 0% 25%;
+  text-align: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#community-tagline {
+  background-color: white;
+  color: #b3e988;
+  font-family: "Quando", serif;
+  font-size: 1.5em;
+  margin-top: 0px;
+  margin-right: 25%;
+  margin-left: 25%;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#post-add {
+  background-color: #b3e988;
+  border: none;
+  border-radius: 25px;
+  font-family: "Quando", serif;
+  color: white;
+  height: 60px;
+  width: 80px;
+  margin-left: 48%;
+  text-align: center;
+  font-size: 2.6em;
+  align-content: center;
+  text-decoration: none;
+}
+
+#post-add a {
+  color: white;
+}
+
+#conversation {
+  width: 40%;
+}
+
+#community-post-orange {
+  background-color: #ffc996;
+  width: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  #community-tagline {
+    display: none;
+  }
+
+  #post-add {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+  }
+  #post-add a {
+    background-color: transparent;
+    color: teal;
+  }
+}
+
+/* Community Phone */
+@media screen and (max-width: 411px) {
+  #community-header {
+    background-color: transparent;
+    font-size: 2.5em;
+    margin: 8%;
+  }
+  #community-tagline {
+    display: none;
+  }
+  #conversation {
+    display: none;
+  }
+  #post-add {
+    font-size: 1.6em;
+    height: 30px;
+    background-color: transparent;
+  }
+
+  #post-add a {
+    background-color: transparent;
+    color: teal;
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 768px) {
+  #community-header {
+    margin: 10% 25% 0% 25%;
+    border-radius: 25px;
+  }
+}
+
+/* cards */
+.posts {
+  margin: 20px 50px;
+}
+.card {
+  border-radius: 20px;
+  font-family: "Quando", serif;
+}
+
+.card-button {
+  background-color: #5bc6e8;
+  border-style: none;
+  margin-right: 10px;
+}
+
+.card-subtitle {
+  font-size: 3vh;
+  font-style: italic;
+  color: fuchsia;
+  font-family: "Quando", serif;
+}
+
+.btn-full-post {
+  margin-right: 10px;
+  background-color: thistle;
+  color: white;
+  border-color: thistle;
+}
+
+.full-card-body {
+  min-height: 83vh;
+}
+
+.full-card-title {
+  text-align: center;
+  font-size: 2.25rem;
+  color: #5bc6e8;
+}
+
+.full-card-text {
+  text-align: justify;
+  margin: 10px 100px;
+}
+
+.full-post-username {
+  text-align: center;
+  color: fuchsia;
+  font-style: italic;
+  font-family: "Quando", serif;
+}
+
+.full-text-btn {
+  margin-left: 100px;
+}
+
+.comments {
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.comment-input {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.like-button {
+  background-color: #dcf0cc;
+  border-radius: 20px;
+  border-color: #dcf0cc;
+  border-width: thin;
+}
+
+.like-count {
+  background-color: teal;
+  color: white;
+}
+
+.submit-comment-btn {
+  margin-left: 100px;
+  margin-top: 10px;
+  background-color: #c1a1d3;
+  color: white;
+  border-color: white;
+}
+
+.cmt-xpnd {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 25px;
+}
+
+/* Full Post Phone */
+
+@media screen and (max-width: 411px) {
+  .full-card-text {
+    margin: 15px;
+  }
+  .full-text-btn {
+    margin-left: 15px;
+  }
+
+  .comments {
+    margin-left: 15px;
+  }
+}
+
+/* Book Page */
+
+#book-container {
+  min-height: 520px;
+}
+
+.baby-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
+  border-color: aliceblue;
+  border-style: solid;
+  margin-left: 200px;
+}
+
+#baby-name {
+  font-family: "Oldenburg", cursive;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 3em;
+}
+
+.birth-story {
+  font-size: 1.4em;
+}
+
+#book-button-edit {
+  margin-left: 30px;
+  font-family: "Oldenburg", cursive;
+  font-size: 1em;
+  border-color: #b3e988;
+  color: #b3e988;
+  background-color: white;
+  border-radius: 20px;
+  border-style: solid;
+}
+
+#book-button-edit:hover {
+  background-color: #b3e988;
+}
+
+.book-link-1 {
+  color: #b3e988;
+}
+.book-link-1:hover {
+  color: white;
+}
+
+.book-link-2 {
+  color: #5bc6e8;
+}
+
+.book-link-2:hover {
+  color: white;
+}
+.book-label {
+  color: white;
+  font-family: "Quando", serif;
+}
+
+.bk-row {
+  height: 70vh;
+  align-items: center;
+}
+
+.carousel {
+  margin-top: 50px;
+  background-color: thistle;
+  height: 70vh;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.content-container {
+  text-align: center;
+}
+
+.entries {
+  font-family: "Quando", serif;
+  font-size: 3rem;
+}
+
+#onesie-book {
+  width: 200px;
+}
+
+#music-note {
+  width: 200px;
+}
+
+/* Book - Phone */
+
+@media screen and (max-width: 411px) {
+  .birth-story {
+    font-size: 1em;
+  }
+}
+
+/* Questionnnaire */
+
+#quest-header {
+  color: #5bc6e8;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.quest-label {
+  padding-right: 20px;
+  padding-left: 40px;
+}
+
+#save-button {
+  margin-left: 45%;
+  border: none;
+  background-color: #b3e988;
+  width: 60px;
+  border-radius: 20px;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 3px;
+}
+#save-button:hover {
+  background-color: white;
+  border: solid;
+  border-color: #b3e988;
+  color: #b3e988;
+}
+
+#cancel-button {
+  border: none;
+  background-color: #929491;
+  width: 60px;
+  border-radius: 20px;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+#cancel-button:hover {
+  background-color: rgb(238, 78, 78);
+  border: solid;
+  border-color: #929491;
+}
+
+.white-box-quest {
+  background-color: white;
+  font-family: "Quando", serif;
+  margin: 5% 10%;
+  border-radius: 20px;
+}
+
+.form-control {
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+.input-group {
+  padding: 20px 15%;
+}
+
+.input-group-text {
+  background-color: #dcf0cc;
+  border-radius: 20px;
+}
+
+/* Questionnaire Phone */
+@media screen and (max-width: 411px) {
+  .answer-box {
+    width: 100% !important;
+    border-radius: 0px;
+  }
+
+  .input-group-text {
+    border-radius: 0px;
+  }
+
+  #save-button {
+    margin-left: 30%;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #b3e988;
+  height: 6vh;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  position: 100vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
