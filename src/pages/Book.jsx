@@ -65,7 +65,7 @@ function Book() {
       <container id="book-container" />
       <h1 id="baby-name"> Baby {babyName} </h1>
       <button id="book-button-edit">
-        <Link className="book-link-1" to="/questionnaire">
+        <Link className="book-link-1" to="/babybook/questionnaire">
           <i className="fas fa-edit"></i>Edit
         </Link>
       </button>

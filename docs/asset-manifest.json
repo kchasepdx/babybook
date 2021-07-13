@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/babybook/static/css/main.9ab703e2.chunk.css",
-    "main.js": "/babybook/static/js/main.3a038fc1.chunk.js",
-    "main.js.map": "/babybook/static/js/main.3a038fc1.chunk.js.map",
+    "main.css": "/babybook/static/css/main.9dab9eea.chunk.css",
+    "main.js": "/babybook/static/js/main.d7feda29.chunk.js",
+    "main.js.map": "/babybook/static/js/main.d7feda29.chunk.js.map",
     "runtime-main.js": "/babybook/static/js/runtime-main.4b9ad20b.js",
     "runtime-main.js.map": "/babybook/static/js/runtime-main.4b9ad20b.js.map",
     "static/js/2.885cc212.chunk.js": "/babybook/static/js/2.885cc212.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.08feaeab.chunk.js": "/babybook/static/js/3.08feaeab.chunk.js",
     "static/js/3.08feaeab.chunk.js.map": "/babybook/static/js/3.08feaeab.chunk.js.map",
     "index.html": "/babybook/index.html",
-    "static/css/main.9ab703e2.chunk.css.map": "/babybook/static/css/main.9ab703e2.chunk.css.map",
+    "static/css/main.9dab9eea.chunk.css.map": "/babybook/static/css/main.9dab9eea.chunk.css.map",
     "static/js/2.885cc212.chunk.js.LICENSE.txt": "/babybook/static/js/2.885cc212.chunk.js.LICENSE.txt",
     "static/media/Cloud.c26d84c0.png": "/babybook/static/media/Cloud.c26d84c0.png",
     "static/media/baby-boy.b604a341.png": "/babybook/static/media/baby-boy.b604a341.png",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.4b9ad20b.js",
     "static/js/2.885cc212.chunk.js",
-    "static/css/main.9ab703e2.chunk.css",
-    "static/js/main.3a038fc1.chunk.js"
+    "static/css/main.9dab9eea.chunk.css",
+    "static/js/main.d7feda29.chunk.js"
   ]
 }
