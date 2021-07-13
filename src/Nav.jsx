@@ -37,20 +37,20 @@ function Nav(props) {
       <nav id="full-navbar" className="navbar fixed-top">
         <div className={`container-fluid ${userName && "nav-with-user"}`}>
           {curPage === "/profile" ? (
-            <a className="current-nav navbar-brand" href="/babybook/profile">
+            <a className="current-nav navbar-brand" href="/profile">
               Home
             </a>
           ) : (
-            <a className="navbar-brand" href="/babybook/profile">
+            <a className="navbar-brand" href="/profile">
               Home
             </a>
           )}
           {curPage === "/community" ? (
-            <a className="navbar-brand current-nav" href="/babybook/community">
+            <a className="navbar-brand current-nav" href="/community">
               Community
             </a>
           ) : (
-            <a className="navbar-brand " href="/babybook/community">
+            <a className="navbar-brand " href="/community">
               Community
             </a>
           )}
@@ -87,10 +87,10 @@ function Nav(props) {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdown"
               >
-                <a class="drop-brand drop-main" href="/babybook/book">
+                <a class="drop-brand drop-main" href="/book">
                   View Book
                 </a>
-                <a class="drop-brand drop-main" href="/babybook/questionnaire">
+                <a class="drop-brand drop-main" href="/questionnaire">
                   Edit
                 </a>
               </div>
@@ -115,18 +115,18 @@ function Nav(props) {
         </button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li>
-            <a className="dropdown-item" href="/babybook/profile">
+            <a className="dropdown-item" href="/profile">
               Home
             </a>
           </li>
           <li>
-            <a className="dropdown-item" href="/babybook/book">
+            <a className="dropdown-item" href="/book">
               My Book
             </a>
           </li>
 
           <li>
-            <a className="dropdown-item" href="/babybook/community">
+            <a className="dropdown-item" href="/community">
               Community
             </a>
           </li>

@@ -15,27 +15,19 @@ import FullPost from "./pages/FullPost.jsx";
 
 const Main = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/babybook">
       <AuthProvider>
         <Switch>
           {" "}
           {/* The Switch decides which component to show based on the current URL.*/}
-          <Route path="/babybook" component={Landing} />
-          <Route exact path="/babybook/register" component={Register} />
-          <PrivateRoute exact path="/babybook/profile" component={Profile} />
-          <PrivateRoute
-            exact
-            path="/babybook/community"
-            component={Community}
-          />
-          <PrivateRoute
-            exact
-            path="/babybook/questionnaire"
-            component={Questionnaire}
-          />
-          <PrivateRoute exact path="/babybook/post" component={Post} />
-          <PrivateRoute exact path="/babybook/book" component={Book} />
-          <PrivateRoute path="/babybook/post/:id" component={FullPost} />
+          <Route path="/" component={Landing} />
+          <Route exact path="/register" component={Register} />
+          <PrivateRoute exact path="/profile" component={Profile} />
+          <PrivateRoute exact path="/community" component={Community} />
+          <PrivateRoute exact path="/questionnaire" component={Questionnaire} />
+          <PrivateRoute exact path="/post" component={Post} />
+          <PrivateRoute exact path="/book" component={Book} />
+          <PrivateRoute path="/post/:id" component={FullPost} />
         </Switch>
       </AuthProvider>
     </BrowserRouter>
