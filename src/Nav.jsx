@@ -51,13 +51,8 @@ function Nav(props) {
               <a className="navbar-brand current-nav">Community</a>
             </Link>
           ) : (
-            <Link to="community">
-              <a
-                className="navbar-brand "
-                href={process.env.PUBLIC_URL + "/community"}
-              >
-                Community
-              </a>
+            <Link to="/community">
+              <a className="navbar-brand ">Community</a>
             </Link>
           )}
 
@@ -121,20 +116,20 @@ function Nav(props) {
         </button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <li>
-            <a className="dropdown-item" href="/profile">
-              Home
-            </a>
+            <Link to="/profile">
+              <a className="dropdown-item">Home</a>
+            </Link>
           </li>
           <li>
-            <a className="dropdown-item" href="/book">
-              My Book
-            </a>
+            <Link to="/book">
+              <a className="dropdown-item">My Book</a>
+            </Link>
           </li>
 
           <li>
-            <a className="dropdown-item" href="/community">
-              Community
-            </a>
+            <Link to="/community">
+              <a className="dropdown-item">Community</a>
+            </Link>
           </li>
           <li>
             <a className="dropdown-item" onClick={handleLogout}>
