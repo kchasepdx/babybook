@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function PageNotFound({ location }) {
+function PageNotFound(props) {
   const location = props.match.params.location;
 
   return (
