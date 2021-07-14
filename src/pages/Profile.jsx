@@ -42,6 +42,9 @@ function Profile() {
   var birthday = new Date(babyBDay + " 00:");
   var today = new Date();
   var numOfYears = today.getFullYear() - birthday.getFullYear();
+  console.log(birthday);
+  console.log(numOfMonths);
+  console.log(typeof numOfMonths);
 
   return (
     <div>
@@ -51,7 +54,7 @@ function Profile() {
         <div className="profile-container">
           {babyName === "" ? (
             <h1 className="h1 profile-header">Welcome!</h1>
-          ) : babyBDay === "" ? (
+          ) : typeof numOfMonths !== "number" ? (
             <h1 className="h1 profile-header">Welcome!</h1>
           ) : numOfMonths >= 24 ? (
             <h1 className="h1 profile-header">
