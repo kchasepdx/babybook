@@ -15,7 +15,7 @@ import FullPost from "./pages/FullPost.jsx";
 
 const Main = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/babybook">
       <AuthProvider>
         <Switch>
           {" "}
