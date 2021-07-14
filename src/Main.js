@@ -12,6 +12,7 @@ import Questionnaire from "./pages/Questionnaire.jsx";
 import Post from "./pages/Post.jsx";
 import Book from "./pages/Book.jsx";
 import FullPost from "./pages/FullPost.jsx";
+import PageNotFound from "./pages/PageNotFound.jsx";
 
 const Main = () => {
   return (
@@ -28,6 +29,7 @@ const Main = () => {
           <PrivateRoute exact path="/post" component={Post} />
           <PrivateRoute exact path="/book" component={Book} />
           <PrivateRoute path="/post/:id" component={FullPost} />
+          <Route component={PageNotFound} />
         </Switch>
       </AuthProvider>
     </BrowserRouter>
