@@ -125,6 +125,13 @@ a:-webkit-any-link {
   #cloud {
     display: none;
   }
+  .form-control {
+    line-height: 0.2;
+  }
+
+  .footer {
+    display: none;
+  }
 }
 #book-img {
   display: none;
@@ -514,12 +521,16 @@ li a {
   }
 
   .baby {
-    margin: 1% 17%;
-    width: 59%;
+    /* margin: 1% 17%;
+    width: 59%; */
+    margin: 1% 25%;
+    width: 45vw;
+
+    border: solid 8px #d5ecc2;
   }
 
   .profile-header {
-    font-size: 3.8rem;
+    font-size: 3rem;
     margin-top: 0;
     text-align: center;
   }
@@ -928,6 +939,14 @@ li a {
   }
 
   .comments {
+    margin-left: 15px;
+  }
+
+  .comment-input {
+    margin-left: 2px;
+  }
+
+  .submit-comment-button {
     margin-left: 15px;
   }
 }
