@@ -1,5 +1,3 @@
-import React from "react";
-
 function GetNumMonths(babyBDay) {
   var today = new Date();
   var birthDate = new Date(babyBDay + " 00:");

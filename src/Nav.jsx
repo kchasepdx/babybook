@@ -22,6 +22,7 @@ function Nav(props) {
       history.push("/babybook");
     } catch {
       setError("failed to log out");
+      console.log(error);
     }
   }
 
@@ -38,21 +39,22 @@ function Nav(props) {
       <nav id="full-navbar" className="navbar fixed-top">
         <div className={`container-fluid ${userName && "nav-with-user"}`}>
           {curPage === "/profile" ? (
-            <Link to="/profile">
-              <a className="current-nav navbar-brand">Home</a>
+            <Link to="/profile" className="current-nav navbar-brand">
+              Home
+              {/* <a className="current-nav navbar-brand">Home</a> */}
             </Link>
           ) : (
-            <Link to="/profile">
-              <a className="navbar-brand">Home</a>{" "}
+            <Link to="/profile" className="navbar-brand">
+              Home{" "}
             </Link>
           )}
           {curPage === "/community" ? (
-            <Link to="/community">
-              <a className="navbar-brand current-nav">Community</a>
+            <Link to="/community" className="navbar-brand current-nav">
+              Community
             </Link>
           ) : (
-            <Link to="/community">
-              <a className="navbar-brand ">Community</a>
+            <Link to="/community" className="navbar-brand">
+              Community
             </Link>
           )}
 

@@ -28,7 +28,9 @@ function Landing() {
 
   return (
     // LOGIN AREA
+
     <div id="landing">
+      <span className="hidden">{loading}</span>
       {error && (
         <div className="alert alert-danger" role="alert">
           {error}
@@ -69,7 +71,7 @@ function Landing() {
       <button id="register-link" className="container-fluid">
         <Link to="/register">Register Now</Link>
       </button>
-      <img src={Book} alt="book image" id="book-img" />
+      <img src={Book} alt="presentational only" id="book-img" />
       <div id="rainbow-div"></div>
       <Footer />
     </div>

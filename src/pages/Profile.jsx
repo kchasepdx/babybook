@@ -35,6 +35,7 @@ function Profile() {
       }
     })
     .catch((error) => {
+      setError(error);
       console.log("Error getting document:", error);
     });
 
