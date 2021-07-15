@@ -114,7 +114,7 @@ function Register() {
             Sign Up{" "}
           </button>
           <button id="register-link-reg">
-            <Link to="babybook/">Existing User?</Link>
+            <Link to="/">Existing User?</Link>
           </button>
         </div>
       </form>
