@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../src/contexts/AuthContext";
-import fire from "/Users/kristenchase/baby-book/src/fire.js";
+import fire from "./fire";
 import { Link } from "react-router-dom";
 
 function Nav(props) {

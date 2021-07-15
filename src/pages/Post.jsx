@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nav from "/Users/kristenchase/baby-book/src/Nav.jsx";
+import Nav from "../Nav";
 import { useHistory } from "react-router";
 import fire, { db } from "../fire";
 

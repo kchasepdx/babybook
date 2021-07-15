@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Baby from "../Images/baby-boy.png";
-import Nav from "/Users/kristenchase/baby-book/src/Nav.jsx";
+import Nav from "../Nav";
 import { Link } from "react-router-dom";
-import fire, { db } from "/Users/kristenchase/baby-book/src/fire.js";
+import fire, { db } from "../fire";
 import Footer from "../Footer";
 import GetNumMonths from "../GetNumMonths";
 

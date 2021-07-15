@@ -1,6 +1,6 @@
 import "./App.css";
 import Main from "./Main";
-import { AuthProvider } from "/Users/kristenchase/baby-book/src/contexts/AuthContext.js";
+import { AuthProvider } from "./contexts/AuthContext";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { useAuth } from "/Users/kristenchase/baby-book/src/contexts/AuthContext.js";
+import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 
 // images

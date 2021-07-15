@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Nav from "/Users/kristenchase/baby-book/src/Nav.jsx";
+import Nav from "../Nav";
 import Conversation from "../Images/conversation.png";
 import Footer from "../Footer";
 import { db } from "../fire";

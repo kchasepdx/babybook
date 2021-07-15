@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { AuthProvider } from "/Users/kristenchase/baby-book/src/contexts/AuthContext.js";
-import PrivateRoute from "/Users/kristenchase/baby-book/src/pages/PrivateRoute.js";
+import { AuthProvider } from "./contexts/AuthContext";
+import PrivateRoute from "./pages/PrivateRoute";
 
 //Pages
 import Landing from "./pages/Landing.jsx";
