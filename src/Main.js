@@ -16,19 +16,19 @@ import PageNotFound from "./pages/PageNotFound.jsx";
 
 const Main = () => {
   return (
-    <BrowserRouter basename="/babybook">
+    <BrowserRouter>
       <AuthProvider>
         <Switch>
           {" "}
           {/* The Switch decides which component to show based on the current URL.*/}
-          <Route path="/babybook" component={Landing} />
+          <Route exact path="/babybook" component={Landing} />
           <Route exact path="/register" component={Register} />
           <PrivateRoute exact path="/profile" component={Profile} />
           <PrivateRoute exact path="/community" component={Community} />
           <PrivateRoute exact path="/questionnaire" component={Questionnaire} />
           <PrivateRoute exact path="/post" component={Post} />
           <PrivateRoute exact path="/book" component={Book} />
-          <PrivateRoute path="/post/:id" component={FullPost} />
+          <PrivateRoute exact path="/post/:id" component={FullPost} />
           <Route component={PageNotFound} />
         </Switch>
       </AuthProvider>
