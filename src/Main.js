@@ -20,7 +20,7 @@ const Main = () => {
         <Switch>
           {" "}
           {/* The Switch decides which component to show based on the current URL.*/}
-          <Route exact path="/babybook" component={Landing} />
+          <Route path="/" component={Landing} />
           <Route exact path="/register" component={Register} />
           <PrivateRoute exact path="/profile" component={Profile} />
           <PrivateRoute exact path="/community" component={Community} />
