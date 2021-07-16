@@ -47,7 +47,7 @@ function Community() {
         </h1>
         <p id="community-tagline">Share Your Highs and Lows</p>
         <p id="post-add">
-          <Link to="/babybook/post">
+          <Link to="/post">
             <i class="far fa-edit"></i>
           </Link>
         </p>
