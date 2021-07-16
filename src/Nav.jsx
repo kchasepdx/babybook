@@ -41,7 +41,6 @@ function Nav(props) {
           {curPage === "/profile" ? (
             <Link to="/profile" className="current-nav navbar-brand">
               Home
-              {/* <a className="current-nav navbar-brand">Home</a> */}
             </Link>
           ) : (
             <Link to="/profile" className="navbar-brand">
