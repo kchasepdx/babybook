@@ -44,10 +44,10 @@ function Profile() {
   var birthdayTest = new Date(babyBDay);
   var today = new Date();
   var numOfYears = today.getFullYear() - birthday.getFullYear();
-  console.log(birthday);
+  console.log("bday w/ manipulation" + birthday);
   console.log(numOfMonths);
   console.log(typeof numOfMonths);
-  console.log(birthdayTest);
+  console.log("without manipulation" + birthdayTest);
 
   return (
     <div>
